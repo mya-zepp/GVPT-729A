@@ -118,6 +118,8 @@ ppclose0 <- pnorm(coefs_probit[2]*0 + coefs_probit[3]*as.numeric(sample$age) +
 effect <- ppclose0 - pprobit
 summary(effect)
 
+# the individual probability of voting will go up 3 percentage points
+
 # Now examine the effect by education (R&W (1980) theorize that the effect should decrease as education increases).
 library(plyr)
 sample$effect <- effect
